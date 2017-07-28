@@ -1,0 +1,45 @@
+$background:#F1994B;
+$pri:#F14B50;
+$sec:#be0e14;
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+$font-title:'Pacifico', cursive;
+
+.container{
+    width:600px;
+    margin:auto;
+    background-color:$background;
+    border-radius:15px;
+    box-shadow: 5px 5px 10px black;
+    .title-container{
+        font-family: $font-title;
+        padding-left:15px;
+        padding-bottom:1px;
+        text-shadow: 2px 2px 5px black;
+        border-radius: 15px 15px 0 0;
+        background-color: $pri;
+        color:$background;
+        border-bottom:3px solid $sec;
+        box-shadow: 0 2px 1px black;
+
+    }
+    .board{
+        position: relative;
+        width:400px;
+        min-height:200px;
+        padding-bottom: 50px;
+        margin:auto;
+
+        .edit{
+
+        }
+        &>.edit{
+            position: absolute;
+            bottom:10px;
+            width:100%;
+            button{
+                font-size: 150%;
+            }
+        }
+    }
+}

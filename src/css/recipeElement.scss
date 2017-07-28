@@ -1,0 +1,31 @@
+$white:#f2f2f2;
+$pri:#F14B50;
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Pacifico');
+$font-text:'Inconsolata', monospace;
+
+.recipeElement{
+    background-color: $white;
+    border-radius: 10px;
+    margin:15px;
+    padding: 10px;
+    box-shadow: 1px 1px 20px black;
+    font-family: $font-text;
+    h1{
+        margin:3px;
+        padding-left:10px;
+        border-bottom: 3px $pri solid;
+        .trash{
+                float:right;
+                padding-right: 10px;
+        }
+        .plus{
+            padding-right:10px;
+        }
+    }
+    .edit{
+        button{
+            font-size: 100%;
+        }
+    }
+}

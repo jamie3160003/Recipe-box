@@ -1,0 +1,53 @@
+$red: #ed1219;
+$blue:#00bfff;
+
+@import url('https://fonts.googleapis.com/css?family=Anton');
+$font-button:'Anton', sans-serif;
+
+.edit{
+    display:flex;
+    justify-content: center;
+    .inputBox{
+        border-radius: 6px;
+        padding-left:3px;
+    }
+    .button{
+        border-radius: 6px;
+        width:30px;
+        height:30px;
+        margin:0 5px;
+        &.enter{
+            font-family: $font-button;
+            color:white;
+            width:50px;
+            height:30px;
+            background-color: $blue;
+            border: none;
+            box-shadow: 1px 1px 10px black;
+            cursor:pointer;
+            &:hover{
+                box-shadow: 1px 1px 20px black;
+            }
+        }
+        &.plus{
+            border-radius: 50%;
+            font-size:100%;
+            color:white;
+            background-color: $red;
+            border:none;
+            box-shadow: 1px 1px 10px black;
+            cursor:pointer;
+            display: flex;
+            i{
+                margin:auto;
+            }
+            &:hover{
+                box-shadow: 1px 1px 20px black;
+            }
+        }
+    }
+
+    form{
+        display:inline-block;
+    }
+}
